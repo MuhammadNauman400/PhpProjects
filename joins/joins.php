@@ -8,6 +8,8 @@ $dbname = "joins";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
+//Inner join
+
 echo "<h2>Inner Join</h2>";
 $inner_query = "SELECT users.username, orders.product, orders.quantity FROM users INNER JOIN orders ON users.user_id = orders.user_id";
 
